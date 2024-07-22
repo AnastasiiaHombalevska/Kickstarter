@@ -31,33 +31,14 @@
   }
 
   &__link {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: $c-green;
+    @include link-decoration;
 
-    // position: relative;
-    // border-bottom: 51px;
-    // transform: translateX(51px);
-    // text-decoration: none;
-  }
+    &::after {
+      @include link-underline;
+    }
 
-  &__link::after {
-    content: '';
-    display: block;
-    width: 51px;
-    height: 1px;
-    background-color: $c-green;
-
-    // position: absolute;
-    // bottom: -2px;
-    // left: 0;
-    // transform: translateX(0);
-    transition: transform 0.3s;
-  }
-
-  &__link:hover::after {
-    transform: translateX(100%);
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
