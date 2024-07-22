@@ -4,3 +4,48 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin on-tablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin on-desctop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin on-large-screen {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin padding-inline {
+  padding-inline: 30px;
+}
+
+@mixin link-decoration {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $c-green;
+  text-decoration: none;
+  position: relative;
+}
+
+@mixin link-underline {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 1px;
+  background-color: $c-green;
+  position: absolute;
+  bottom: -5px;
+
+  transition: width 0.3s ease-in-out;
+}
+
