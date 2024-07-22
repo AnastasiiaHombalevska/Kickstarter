@@ -1,0 +1,44 @@
+.questions {
+  @include padding-inline;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: $c-dark-gray;
+    margin-bottom: 27px;
+  }
+
+  &__form {
+    margin-bottom: 110px;
+  }
+
+  &__form__input {
+    border: 1px solid #828282;
+    margin-bottom: 20px;
+  }
+
+  &__form__input::placeholder {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #bdbdbd;
+  }
+
+  &__form__textarea {
+    border: 1px solid #828282;
+    width: 260px;
+    height: 128px;
+    margin-bottom: 30px;
+  }
+
+  &__form__btn {
+    background-color: #0db2b3;
+    border: none;
+    color: $c-white;
+    text-transform: uppercase;
+    padding: 13px 35px;
+    width: 102px;
+  }
+}

@@ -1,0 +1,44 @@
+.user__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../images/Vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 208px;
+  height: 171px;
+
+  &__desc {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    color: $c-dark-gray;
+  }
+
+  &__avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    color: $c-dark-gray;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $c-gray;
+  }
+}

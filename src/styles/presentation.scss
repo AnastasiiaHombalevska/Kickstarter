@@ -1,0 +1,13 @@
+.presentation {
+  padding-inline: 12px;
+  margin-bottom: 110px;
+
+  &__image {
+    background-image: url(../images/mobile/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 296px;
+    height: 195px;
+  }
+}

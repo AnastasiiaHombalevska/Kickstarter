@@ -1,19 +1,18 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
-
-// @import './icons';
-// @import './header';
-// @import './aside-menu';
-// @import './benefits';
-// @import './presentation';
-// @import './about-us';
-// @import './technology';
-// @import './testimonilas';
-// @import './user-card';
-// @import './features';
-// @import './questions';
-// @import './footer';
+@import './icons';
+@import './header';
+@import './aside-menu';
+@import './benefits';
+@import './presentation';
+@import './about-us';
+@import './technology';
+@import './testimonilas';
+@import './user-card';
+@import './features';
+@import './questions';
+@import './footer';
 
 body {
   background: $c-white;

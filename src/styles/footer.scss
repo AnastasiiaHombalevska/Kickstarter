@@ -1,0 +1,23 @@
+.footer {
+  @include padding-inline;
+
+  display: flex;
+  flex-direction: column;
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    margin-bottom: 30px;
+  }
+
+  &__rights {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #bdbdbd;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}

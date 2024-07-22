@@ -1,0 +1,29 @@
+.menu {
+  background-color: $c-white;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include padding-inline;
+
+    padding-block: 25px;
+    margin-bottom: 31px;
+  }
+
+  &__list {
+    @include padding-inline;
+
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $c-dark-gray;
+    text-decoration: none;
+  }
+}

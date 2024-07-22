@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include padding-inline;
+
+    padding-block: 25px;
+  }
+
+  &__background {
+    width: 320px;
+    height: 245px;
+    background-image: url(../images/mobile/1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__bottom {
+    @include padding-inline;
+
+    padding-top: 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $c-dark-gray;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-dark-gray;
+  }
+ }
