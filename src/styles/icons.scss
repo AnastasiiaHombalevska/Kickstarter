@@ -10,15 +10,22 @@
     width: 161px;
     background-image: url(../images/icons/logo-mobile.svg);
     margin-right: 67px;
+
+    @include hover('transform', scale(1.2));
   }
 
   &--menu {
     background-image: url(../images/icons/menu.svg);
+
+    @include hover('transform', scale(1.5));
   }
 
   &--close {
     background-image: url(../images/icons/close.svg);
     width: 16px;
+    background-size: contain;
+
+    @include hover('transform', scale(1.5));
   }
 
   &--benefits {
@@ -33,9 +40,7 @@
     width: 48px;
     height: 14px;
 
-    &:hover {
-      background-image: url(../images/icons/arrow-left-hover.svg);
-    }
+    @include hover('background-image', url(../images/icons/arrow-left-hover.svg));
   }
 
   &--right {
@@ -44,36 +49,28 @@
     height: 14px;
     margin-left: -2px;
 
-    &:hover {
-      background-image: url(../images/icons/arrow-right-hover.svg);
-    }
+    @include hover('background-image', url(../images/icons/arrow-right-hover.svg));
   }
 
   &--facebook {
     background-image: url(../images/icons-social-media/facebook.svg);
     width: 24px;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover('transform', scale(1.5));
   }
 
   &--twitter {
     background-image: url(../images/icons-social-media/twitter.svg);
     width: 24px;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover('transform', scale(1.5));
   }
 
   &--instagram {
     background-image: url(../images/icons-social-media/instagram.svg);
     width: 24px;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover('transform', scale(1.5));
   }
 }
 
