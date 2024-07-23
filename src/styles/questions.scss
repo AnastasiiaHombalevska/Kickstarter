@@ -12,7 +12,7 @@
 
   &__form {
     width: 260px;
-    margin-bottom: 110px;
+    margin: 0 auto 110px;
   }
 
   &__form__input {
@@ -23,6 +23,7 @@
     margin-bottom: 20px;
 
     &::placeholder {
+      font-family: Inter, sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
@@ -31,12 +32,16 @@
   }
 
   &__form__textarea {
+    box-sizing: border-box;
     border: 1px solid #828282;
     width: 260px;
     height: 128px;
     margin-bottom: 30px;
+    outline: none;
+    resize: none;
 
     &::placeholder {
+      font-family: Inter, sans-serif;
       padding: 12px 20px;
       font-weight: 400;
       font-size: 16px;
@@ -46,11 +51,14 @@
   }
 
   &__form__btn {
+    font-family: Inter, sans-serif;
     background-color: #0db2b3;
     border: none;
     color: $c-white;
     text-transform: uppercase;
     padding: 13px 35px;
-    width: 102px;
+    box-sizing: border-box;
+
+    // width: 102px;
   }
 }

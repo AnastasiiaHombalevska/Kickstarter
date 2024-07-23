@@ -1,14 +1,12 @@
 .footer {
   @include padding-inline;
 
-  display: flex;
-  flex-direction: column;
-
-  &__socials {
+  &__socials__list {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
-
     margin-bottom: 30px;
   }
 
