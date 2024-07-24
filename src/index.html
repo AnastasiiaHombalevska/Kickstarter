@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -13,16 +13,12 @@
     />
   </head>
 
-  <body>
+  <body class="page__body">
     <header class="header" id="header">
-      <nav class="header__nav">
-        <div>
-          <a href="#" class="icon icon--logo"></a>
-        </div>
+      <nav class="nav">
+        <a href="#" class="nav__link icon icon--logo"></a>
 
-        <div>
-          <a href="#menu" class="icon icon--menu"></a>
-        </div>
+        <a href="#menu" class="nav__link icon icon--menu"></a>
       </nav>
 
       <div class="header__background"></div>
@@ -33,15 +29,11 @@
       </div>
     </header>
 
-    <aside class="menu" id="menu">
-      <nav class="menu__nav">
-        <div>
-          <a href="#" class="icon icon--logo"></a>
-        </div>
+    <aside class="menu page__menu" id="menu">
+      <nav class="nav menu__nav">
+        <a href="#" class="nav__link icon icon--logo"></a>
 
-        <div>
-          <a href="#" class="icon icon--close"></a>
-        </div>
+        <a href="#" class="nav__link icon icon--close"></a>
       </nav>
 
       <div>
@@ -73,7 +65,7 @@
         </ul>
       </div>
 
-      <button class="menu__btn">buy</button>
+      <a href="#" class="menu__btn">buy</a>
     </aside>
 
     <main>

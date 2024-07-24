@@ -3,6 +3,7 @@
 @import 'typography';
 @import './icons';
 @import './header';
+@import './navigation';
 @import './aside-menu';
 @import './benefits';
 @import './presentation';
@@ -14,8 +15,27 @@
 @import './questions';
 @import './footer';
 
-body {
+.page {
   background: $c-white;
   margin: 0 auto;
   font-family: Inter, sans-serif;
+
+  scroll-behavior: smooth;
+
+  // &__body {}
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 }
