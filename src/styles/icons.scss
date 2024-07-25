@@ -8,9 +8,16 @@
   &--logo {
     width: 161px;
     background-image: url(../images/icons/logo-mobile.svg);
+
+    // передивитись доцільність цього марджину
+
     margin-right: 67px;
 
     @include hover('transform', scale(1.2));
+
+    @include on-desctop {
+      margin-right: 0;
+    }
   }
 
   &--menu {

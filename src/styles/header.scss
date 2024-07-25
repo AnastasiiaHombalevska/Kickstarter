@@ -4,6 +4,19 @@
   justify-content: center;
   align-items: center;
 
+  // @include on-desctop {
+  //   flex-direction: row;
+  // }
+
+  &__nav {
+    justify-content: space-between;
+
+    // flex-direction: row;
+    // justify-content: center;
+
+    align-items: center;
+  }
+
   &__background {
     width: 320px;
     height: 245px;
@@ -11,6 +24,13 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  // &__desctop__lang {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
   &__bottom {
     @include padding-inline;
