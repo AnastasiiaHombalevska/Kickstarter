@@ -27,11 +27,28 @@
     @include hover('transform', scale(1.5));
   }
 
-  &--benefits {
+  &--futuristicDesign {
     background-image: url(../images/icons/vector.svg);
     width: 50px;
     height: 40px;
-    margin-bottom: 40px;
+  }
+
+  &--tweeterSpeakerSystem {
+    background-image: url(../images/icons/speaker.svg);
+    width: 46px;
+    height: 40px;
+  }
+
+  &--multiroomSystem {
+    background-image: url(../images/icons/wifi.svg);
+    width: 46px;
+    height: 37px;
+  }
+
+  &--intuitiveLightingSystem {
+    background-image: url(../images/icons/theme.svg);
+    width: 44px;
+    height: 44px;
   }
 
   &--left {

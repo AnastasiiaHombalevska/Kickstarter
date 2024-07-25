@@ -3,24 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
+  & :not(:first-of-type) {
+    display: none;
+  }
 
   @include padding-inline;
 
-  margin: 110px 0;
+  margin: 110px auto 0;
 
-  &__title {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: $c-dark-gray;
-    margin-bottom: 20px;
+  @include on-desctop {
+    & :not(:first-of-type) {
+      display: flex;
+    }
+
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 60px 20px;
+
+    margin: 140px auto 0;
   }
 
-  &__desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: $c-gray;
-  }
+  // створити масив з даними та наповнити картки через js
+
 }

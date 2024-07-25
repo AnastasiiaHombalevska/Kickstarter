@@ -4,11 +4,23 @@
 
   @include padding-inline;
 
+  margin: 110px auto 0;
+
+  @include on-desctop {
+    margin: 140px auto 0;
+  }
+
   &__image {
     width: 296px;
     height: 195px;
     background-image: url(../images/mobile/2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    @include on-desctop {
+      width: 700px;
+      height: 430PX;
+    }
   }
 }

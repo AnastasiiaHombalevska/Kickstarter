@@ -1,0 +1,33 @@
+.benefit__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 260px;
+  box-sizing: border-box;
+
+  @include on-desctop {
+    width: 340px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: $c-dark-gray;
+    margin: 40px 0 20px;
+
+    @include on-desctop {
+      margin: 44px 0 21px;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $c-gray;
+  }
+}

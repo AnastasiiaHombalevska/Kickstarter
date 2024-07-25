@@ -1,13 +1,35 @@
 .technology {
   padding-inline: 12px;
 
-  margin-top: 110px;
-
   @include padding-inline;
 
+  @include on-desctop {
+    padding-right: 0;
+  }
+
   &__container {
-    margin: 110px auto 0;
     width: 320px;
+    margin: 110px auto 0;
+
+    display: grid;
+    grid-template: 'title'
+    'designedImage'
+    'description'
+    'link'
+    auto / auto;
+
+    @include on-desctop {
+      width: 768px;
+      margin: 140px auto 0;
+
+      grid-template-columns: 340px 374px;
+      column-gap: 20px;
+
+      grid-template-areas:
+        'title | designedImage'
+        'description | .'
+        'link | .';
+    }
   }
 
   &__title {
@@ -17,6 +39,16 @@
     color: $c-dark-gray;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    grid-area: title / 1;
+
+    @include on-desctop {
+      font-size: 36px;
+      line-height: 46px;
+
+      grid-area: title / 1;
+      grid-row: 1 / 2;
+    }
   }
 
   &__image {
@@ -26,6 +58,17 @@
     width: 259px;
     height: 210px;
     margin-bottom: 20px;
+
+    grid-area: designedImage / 1;
+
+    @include on-desctop {
+      margin-bottom: 0;
+      width: 374px;
+      height: 415px;
+
+      grid-area: designedImage / 2;
+      grid-row: 1 / 4;
+    }
   }
 
   &__desc {
@@ -34,10 +77,30 @@
     line-height: 24px;
     color: $c-gray;
     margin-bottom: 30px;
+
+    grid-area: description / 1;
+
+    @include on-desctop {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 60px;
+
+      grid-row: 2 / 3;
+    }
   }
 
   &__link {
     @include link-decoration;
+
+    grid-area: link / 1;
+
+    @include on-desctop {
+      box-sizing: border-box;
+      height: 15px;
+      grid-row: 3 / 4;
+
+      margin-bottom: 67px;
+    }
 
     &::after {
       @include link-underline;

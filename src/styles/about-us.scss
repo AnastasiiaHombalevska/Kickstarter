@@ -1,8 +1,6 @@
 .about__us {
   @include padding-inline;
 
-  margin-top: 110px;
-
   @include on-desctop {
     padding-left: 0;
   }
@@ -10,7 +8,7 @@
   &__container {
     width: 320px;
     height: auto;
-    margin: 0 auto;
+    margin: 110px auto 0;
 
     display: grid;
     grid-template: 'title'
@@ -21,8 +19,10 @@
 
     @include on-desctop {
       width: 768px;
+      margin: 140px auto 0;
 
-      grid-template-columns: 374px auto;
+
+      grid-template-columns: 374px 340px;
       column-gap: 20px;
 
       grid-template-areas:
@@ -102,9 +102,6 @@
 
       margin-bottom: 67px;
     }
-
-    // @include on-desctop {
-    // }
 
     &::after {
       @include link-underline;
