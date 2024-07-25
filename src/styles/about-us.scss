@@ -1,8 +1,36 @@
 .about__us {
-  padding-inline: 12px;
-  margin-bottom: 110px;
-
   @include padding-inline;
+
+  margin-top: 110px;
+
+  @include on-desctop {
+    padding-left: 0;
+  }
+
+  &__container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template: 'title'
+      'designedImage'
+      'description'
+      'link'
+      auto / auto;
+
+    @include on-desctop {
+      width: 768px;
+
+      grid-template-columns: 374px auto;
+      column-gap: 20px;
+
+      grid-template-areas:
+        'designedImage | title'
+        '. | description'
+        '. | link';
+    }
+  }
 
   &__title {
     font-weight: 700;
@@ -11,15 +39,35 @@
     color: $c-dark-gray;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    grid-area: title / 1;
+
+    @include on-desctop {
+      font-size: 36px;
+      line-height: 46px;
+
+      grid-area: title / 2;
+      grid-row: 1 / 2;
+    }
   }
 
   &__image {
     background-image: url(../images/mobile/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 259px;
+    max-width: 259px;
     height: 210px;
     margin-bottom: 20px;
+
+    grid-area: designedImage / 1;
+
+    @include on-desctop {
+      margin-bottom: 0;
+      max-width: 374px;
+      height: 415px;
+
+      grid-row: 1 / 4;
+    }
   }
 
   &__desc {
@@ -28,10 +76,35 @@
     line-height: 21px;
     color: $c-gray;
     margin-bottom: 30px;
+
+    grid-area: description / 1;
+
+    @include on-desctop {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 60px;
+
+      grid-area: description / 2;
+      grid-row: 2 / 3;
+    }
   }
 
   &__link {
     @include link-decoration;
+
+    grid-area: link;
+
+    @include on-desctop {
+      box-sizing: border-box;
+      height: 15px;
+      grid-area: link / 2;
+      grid-row: 3 / 4;
+
+      margin-bottom: 67px;
+    }
+
+    // @include on-desctop {
+    // }
 
     &::after {
       @include link-underline;

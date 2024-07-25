@@ -29,9 +29,7 @@
     color: $c-black;
     text-decoration: none;
 
-    &:hover {
-      @include hover('font-weight', 700);
-    }
+    @include hover('font-weight', 700);
   }
 
   &__bottom__container {
@@ -51,7 +49,6 @@
 
     padding-right: 20px;
   }
-
 
   &__language {
     display: flex;

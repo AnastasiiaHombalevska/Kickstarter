@@ -22,7 +22,10 @@
 
   scroll-behavior: smooth;
 
-  // &__body {}
+  &__body {
+    margin: 0;
+    padding: 0;
+  }
 
   &__menu {
     position: fixed;

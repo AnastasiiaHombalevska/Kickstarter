@@ -6,13 +6,13 @@
 }
 
 @mixin on-tablet {
-  @media (min-width: 640px) {
+  @media (min-width: 320px) and (max-width: 743px){
     @content;
   }
 }
 
 @mixin on-desctop {
-  @media (min-width: 769px) {
+  @media (min-width: 744px) and (max-width: 1179px) {
     @content;
   }
 }
@@ -25,6 +25,10 @@
 
 @mixin padding-inline {
   padding-inline: 30px;
+
+  @include on-tablet {
+    padding-inline: 34px;
+  }
 }
 
 @mixin link-decoration {

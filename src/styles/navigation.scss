@@ -1,7 +1,9 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+
+  // align-items: start;
+
   padding-block: 25px;
 
   @include padding-inline;

@@ -1,8 +1,14 @@
 .technology {
   padding-inline: 12px;
-  margin-bottom: 110px;
+
+  margin-top: 110px;
 
   @include padding-inline;
+
+  &__container {
+    margin: 110px auto 0;
+    width: 320px;
+  }
 
   &__title {
     font-weight: 700;
