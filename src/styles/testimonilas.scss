@@ -1,10 +1,18 @@
 .testimonilas {
   @include padding-inline;
 
-  margin-bottom: 110px;
+  margin: 110px auto 0;
 
   background-image: url(../images/Vector.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 208px 171px;
+
+  @include on-tablet {
+    margin: 140px auto 0;
+  }
+
+  @include on-desctop {
+    width: 700px;
+  }
 }

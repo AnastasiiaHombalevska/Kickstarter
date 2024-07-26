@@ -1,6 +1,12 @@
 .questions {
   @include padding-inline;
 
+  margin: 110px auto 0;
+
+  @include on-tablet {
+    margin: 140px auto 0;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 30px;

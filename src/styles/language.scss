@@ -1,4 +1,12 @@
 .language {
+  display: none;
+
+  @include on-tablet {
+    display: block;
+  }
+
+  // @include on-desctop {
+  // }
 
   &__container {
     display: flex;
