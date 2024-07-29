@@ -105,8 +105,8 @@
       @include link-underline;
     }
 
-    &:hover::after {
-      width: 100%;
-    }
+    // &:hover::after {
+    //   width: 100%;
+    // }
   }
 }
