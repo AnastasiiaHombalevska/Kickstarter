@@ -63,7 +63,10 @@
     width: 48px;
     height: 14px;
 
-    @include hover('background-image', url(../images/icons/arrow-left-hover.svg));
+    @include hover(
+      'background-image',
+      url(../images/icons/arrow-left-hover.svg)
+    );
   }
 
   &--right {
@@ -72,7 +75,10 @@
     height: 14px;
     margin-left: -2px;
 
-    @include hover('background-image', url(../images/icons/arrow-right-hover.svg));
+    @include hover(
+      'background-image',
+      url(../images/icons/arrow-right-hover.svg)
+    );
   }
 
   &--facebook {
@@ -96,4 +102,3 @@
     @include hover('transform', scale(1.5));
   }
 }
-

@@ -12,11 +12,12 @@
     margin: 110px auto 0;
 
     display: grid;
-    grid-template: 'title'
-    'designedImage'
-    'description'
-    'link'
-    auto / auto;
+    grid-template:
+      'title'
+      'designedImage'
+      'description'
+      'link'
+      auto / auto;
 
     @include on-tablet {
       width: 768px;
@@ -54,8 +55,8 @@
 
   &__image {
     background-image: url(../images/mobile/4.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     width: 259px;
     height: 210px;
     margin-bottom: 20px;
@@ -63,6 +64,9 @@
     grid-area: designedImage / 1;
 
     @include on-tablet {
+      background-image: url(../images/tablet/4.jpg);
+      background-size: contain;
+
       margin-bottom: 0;
       width: 374px;
       height: 415px;
@@ -106,7 +110,7 @@
     }
 
     // &:hover::after {
-    //   width: 100%;
+    //   width: fit-content;
     // }
   }
 }

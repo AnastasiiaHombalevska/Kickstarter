@@ -7,8 +7,9 @@
     margin: 140px auto 0;
 
     display: grid;
-    grid-template-areas: 'title form'
-    339px / 340px;
+    grid-template-areas:
+      'title form'
+      339px / 340px;
   }
 
   &__title {

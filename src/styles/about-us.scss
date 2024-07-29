@@ -11,7 +11,8 @@
     margin: 110px auto 0;
 
     display: grid;
-    grid-template: 'title'
+    grid-template:
+      'title'
       'designedImage'
       'description'
       'link'
@@ -58,8 +59,8 @@
 
   &__image {
     background-image: url(../images/mobile/3.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     max-width: 259px;
     height: 210px;
     margin-bottom: 20px;
@@ -67,6 +68,9 @@
     grid-area: designedImage / 1;
 
     @include on-tablet {
+      background-image: url(../images/tablet/5.jpg);
+      background-size: contain;
+
       margin-bottom: 0;
       max-width: 374px;
       height: 415px;
