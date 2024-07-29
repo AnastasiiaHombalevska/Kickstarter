@@ -5,6 +5,10 @@
 
   @include on-tablet {
     margin: 140px auto 0;
+
+    display: grid;
+    grid-template-areas: 'title form'
+    339px / 340px;
   }
 
   &__title {
@@ -14,11 +18,21 @@
     color: $c-dark-gray;
     text-transform: uppercase;
     margin-bottom: 27px;
+
+    @include on-tablet {
+      grid-area: title / 1;
+      margin: 0;
+    }
   }
 
   &__form {
     width: 260px;
     margin: 0 auto 110px;
+
+    @include on-tablet {
+      grid-area: form / 2;
+      margin: 0;
+    }
   }
 
   &__form__input {
