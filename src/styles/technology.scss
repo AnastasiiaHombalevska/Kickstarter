@@ -3,7 +3,7 @@
 
   @include padding-inline;
 
-  @include on-desctop {
+  @include on-tablet {
     padding-right: 0;
   }
 
@@ -18,17 +18,21 @@
     'link'
     auto / auto;
 
-    @include on-desctop {
+    @include on-tablet {
       width: 768px;
       margin: 140px auto 0;
 
-      grid-template-columns: 340px 374px;
+      grid-template-columns: 240px 374px;
       column-gap: 20px;
 
       grid-template-areas:
         'title | designedImage'
         'description | .'
         'link | .';
+    }
+
+    @include on-desctop {
+      grid-template-columns: 340px 374px;
     }
   }
 
@@ -42,10 +46,7 @@
 
     grid-area: title / 1;
 
-    @include on-desctop {
-      font-size: 36px;
-      line-height: 46px;
-
+    @include on-tablet {
       grid-area: title / 1;
       grid-row: 1 / 2;
     }
@@ -61,7 +62,7 @@
 
     grid-area: designedImage / 1;
 
-    @include on-desctop {
+    @include on-tablet {
       margin-bottom: 0;
       width: 374px;
       height: 415px;
@@ -80,9 +81,7 @@
 
     grid-area: description / 1;
 
-    @include on-desctop {
-      font-size: 16px;
-      line-height: 24px;
+    @include on-tablet {
       margin-bottom: 60px;
 
       grid-row: 2 / 3;
@@ -94,7 +93,7 @@
 
     grid-area: link / 1;
 
-    @include on-desctop {
+    @include on-tablet {
       box-sizing: border-box;
       height: 15px;
       grid-row: 3 / 4;
