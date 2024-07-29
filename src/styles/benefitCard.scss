@@ -8,6 +8,10 @@
   width: 260px;
   box-sizing: border-box;
 
+  @include on-tablet {
+    width: 284px;
+  }
+
   @include on-desctop {
     width: 340px;
   }

@@ -28,6 +28,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      z-index: -1;
     }
   }
 
@@ -38,7 +39,7 @@
 
     @include on-tablet {
       width: 339px;
-      z-index: 1;
+      padding-top: 95px;
     }
   }
 

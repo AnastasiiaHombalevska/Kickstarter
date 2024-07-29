@@ -18,6 +18,12 @@
     background-size: contain;
     background-position: center;
 
+    @include on-tablet {
+      width: 600px;
+      height: 389px;
+      background-image: url(../images/tablet/3.jpg);
+    }
+
     @include on-desctop {
       width: 700px;
       height: 430PX;

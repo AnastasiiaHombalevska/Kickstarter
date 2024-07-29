@@ -12,7 +12,7 @@
 
   margin: 110px auto 0;
 
-  @include on-desctop {
+  @include on-tablet {
     & :not(:first-of-type) {
       display: flex;
     }

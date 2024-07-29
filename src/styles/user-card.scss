@@ -9,6 +9,11 @@
     margin-bottom: 30px;
     color: $c-dark-gray;
     padding-top: 50px;
+
+    @include on-tablet {
+      font-size: 2cap;
+    line-height: 36px;
+    }
   }
 
   &__avatar {
