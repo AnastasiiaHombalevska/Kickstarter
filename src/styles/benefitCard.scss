@@ -9,12 +9,12 @@
   box-sizing: border-box;
 
   @include on-tablet {
-    width: 270px;
+    width: 328px;
   }
 
-  @include on-desctop {
-    width: 340px;
-  }
+  // @include on-desctop {
+  //   width: 340px;
+  // }
 
   &__title {
     font-weight: 700;
