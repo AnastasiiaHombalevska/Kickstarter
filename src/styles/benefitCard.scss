@@ -12,9 +12,9 @@
     width: 328px;
   }
 
-  // @include on-desctop {
-  //   width: 340px;
-  // }
+  @include on-large-screen {
+    width: 276px;
+  }
 
   &__title {
     font-weight: 700;

@@ -1,28 +1,46 @@
 .benefits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  & :not(:first-of-type) {
-    display: none;
-  }
-
-  @include padding-inline;
-
-  margin: 110px auto 0;
-
-  @include on-tablet {
     & :not(:first-of-type) {
-      display: flex;
+      display: none;
     }
 
-    flex-flow: row wrap;
-    align-items: flex-start;
-    gap: 60px 20px;
+    @include padding-inline;
 
-    margin: 140px auto 0;
+    margin: 110px auto 0;
+
+    @include on-tablet {
+      & :not(:first-of-type) {
+        display: flex;
+      }
+
+      flex-flow: row wrap;
+      align-items: flex-start;
+      gap: 60px 20px;
+
+      margin: 140px auto 0;
+    }
+
+    @include on-large-screen {
+      margin-top: 62px;
+      gap: 30px;
+    }
   }
 
-  // створити масив з даними та наповнити картки через js
+  &__menu__list {
+    display: none;
+
+    @include on-large-screen {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 84px;
+
+      margin-top: 170px;
+    }
+  }
 }
