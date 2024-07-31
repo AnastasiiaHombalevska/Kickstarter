@@ -7,8 +7,9 @@
     right: 92px;
   }
 
-  // @include on-desctop {
-  // }
+  @include on-desctop {
+    right: 125px;
+  }
 
   &__container {
     display: flex;
