@@ -1,12 +1,14 @@
 .header {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
-  // justify-content: center;
+  // @include on-large-screen {
+  //   // width: 1194px;
+  //   // height: 603px;
 
-  @include on-tablet {
-    position: relative;
-  }
+  //   // margin: 0 auto;
+  // }
 
   &__nav {
     justify-content: space-between;
@@ -30,6 +32,13 @@
       bottom: 0;
       z-index: -1;
     }
+
+    @include on-large-screen {
+      width: 816px;
+      height: 464px;
+      left: 378px;
+      top: 90px;
+    }
   }
 
   &__bottom {
@@ -40,6 +49,11 @@
     @include on-tablet {
       width: 339px;
       padding-top: 95px;
+    }
+
+    @include on-large-screen {
+      width: 378px;
+      padding-top: 146px;
     }
   }
 
@@ -54,6 +68,11 @@
     @include on-tablet {
       margin-bottom: 30px;
       width: 339px;
+    }
+
+    @include on-large-screen {
+      font-size: 62px;
+      line-height: 58px;
     }
   }
 

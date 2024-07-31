@@ -3,6 +3,8 @@
 
   @include on-tablet {
     display: block;
+    position: absolute;
+    right: 92px;
   }
 
   // @include on-desctop {
@@ -17,7 +19,7 @@
     align-items: center;
     gap: 30px;
 
-    padding-inline: 30px;
+    // padding-inline: 30px;
   }
 
   &__spesif {

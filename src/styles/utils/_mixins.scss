@@ -29,6 +29,10 @@
   @include on-tablet {
     padding-inline: 34px;
   }
+
+  @include on-large-screen {
+    padding-inline: 123px;
+  }
 }
 
 @mixin link-decoration {
