@@ -4,14 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 110px auto 0;
+
+    // @include padding-inline;
 
     & :not(:first-of-type) {
       display: none;
     }
-
-    @include padding-inline;
-
-    margin: 110px auto 0;
 
     @include on-tablet {
       & :not(:first-of-type) {
