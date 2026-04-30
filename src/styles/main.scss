@@ -1,7 +1,11 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './hero.scss';
 
 body {
-  background: $c-gray;
+  @include forText;
+  background: $c-light-gray;
+  color: $text-c-gray;
+  margin: 0;
 }

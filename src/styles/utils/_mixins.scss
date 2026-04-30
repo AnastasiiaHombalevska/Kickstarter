@@ -4,3 +4,42 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin onTablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onMD {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin onLD {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin forHeaders {
+  font: 700 30px/40px 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin forText {
+  font: 400 16px/24px 'Inter', sans-serif;
+}
+
+@mixin paddingInline {
+  padding-inline: 30px;
+
+  @include onTablet {
+    padding-inline: 34px;
+  }
+
+  @include onLD {
+    padding-inline: 123px;
+  }
+}
