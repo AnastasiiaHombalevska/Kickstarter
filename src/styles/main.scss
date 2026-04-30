@@ -1,11 +1,13 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
-@import './hero.scss';
+@import 'hero';
 
 body {
-  @include forText;
-  background: $c-light-gray;
-  color: $text-c-gray;
+  @include for-text;
+
   margin: 0;
+  box-sizing: border-box;
+  color: $text-c-gray;
+  background: $c-light-gray;
 }

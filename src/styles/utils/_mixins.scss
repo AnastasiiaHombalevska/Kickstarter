@@ -5,41 +5,41 @@
   }
 }
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: 640px) {
     @content;
   }
 }
 
-@mixin onMD {
+@mixin on-md {
   @media (min-width: 1280px) {
     @content;
   }
 }
 
-@mixin onLD {
+@mixin on-ld {
   @media (min-width: 1440px) {
     @content;
   }
 }
 
-@mixin forHeaders {
-  font: 700 30px/40px 'Inter', sans-serif;
+@mixin for-headers {
+  font: 700 30px/40px Inter, sans-serif;
   text-transform: uppercase;
 }
 
-@mixin forText {
-  font: 400 16px/24px 'Inter', sans-serif;
+@mixin for-text {
+  font: 400 16px/24px Inter, sans-serif;
 }
 
-@mixin paddingInline {
+@mixin padding-inline {
   padding-inline: 30px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 34px;
   }
 
-  @include onLD {
+  @include on-ld {
     padding-inline: 123px;
   }
 }

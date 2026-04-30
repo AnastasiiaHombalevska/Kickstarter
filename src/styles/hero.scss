@@ -2,10 +2,8 @@
   &__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
-
-    @include paddingInline;
+    align-items: center;
   }
 
   &__container__image {
@@ -17,7 +15,11 @@
   }
 
   &__title {
-    font: 700 40px/52px 'Inter', sans-serif;
+    font: 700 40px/52px Inter, sans-serif;
     text-transform: uppercase;
+  }
+
+  &__container__description {
+    @include padding-inline;
   }
 }
