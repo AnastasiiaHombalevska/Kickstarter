@@ -1,0 +1,26 @@
+.presentation {
+  &__image-container {
+    width: 296px;
+    margin: 110px auto 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @include on-tablet {
+    &__image-container {
+      @include padding-inline;
+
+      width: 700px;
+      margin-top: 140px;
+    }
+  }
+
+   @include on-md {
+    &__image-container {
+      width: 846px;
+      margin-top: 170px;
+    }
+  }
+}

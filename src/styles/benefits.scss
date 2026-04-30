@@ -45,6 +45,7 @@
   @include on-tablet {
     &__container {
       flex-wrap: wrap;
+      gap: 20px;
     }
 
     &__item {
@@ -53,6 +54,12 @@
 
     &__container &__item {
       display: flex;
+    }
+  }
+
+  @include on-md {
+    &__item {
+      width: 276px;
     }
   }
 }
