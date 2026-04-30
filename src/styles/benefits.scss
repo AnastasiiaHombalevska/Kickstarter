@@ -1,0 +1,58 @@
+.benefits {
+  @include padding-inline;
+
+  overflow: hidden;
+  margin: 110px auto 0;
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item:not(:first-child) {
+    display: none;
+  }
+
+  &__item-title {
+    font:
+      700 22px/28px Inter,
+      sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__item-description {
+    font:
+      400 14px/21px Inter,
+      sans-serif;
+    color: #7c7c7c;
+  }
+
+  &__item-icon {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+
+  @include on-tablet {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 340px;
+    }
+
+    &__container &__item {
+      display: flex;
+    }
+  }
+}

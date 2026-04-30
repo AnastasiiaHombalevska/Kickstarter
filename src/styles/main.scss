@@ -2,11 +2,11 @@
 @import 'fonts';
 @import 'typography';
 @import 'hero';
+@import 'benefits';
 
 body {
   @include for-text;
 
-  margin: 0;
   box-sizing: border-box;
   color: $text-c-gray;
   background: $c-light-gray;
